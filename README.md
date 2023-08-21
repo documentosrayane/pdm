@@ -7,3 +7,4 @@ Este repositório foi criado para submeter códigos da disciplina.
 * aulas/: armazena os códigos exemplos das aulas.
 * praticas/: armazena os códigos das atividades práticas.
 
+* rayane
