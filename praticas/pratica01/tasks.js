@@ -19,7 +19,7 @@ function addTask(taskName) {
 }
 
 function removeTask(taskId) {
-
+ 
   tasks = tasks.filter(task => task.id !== taskId);
 }
 
