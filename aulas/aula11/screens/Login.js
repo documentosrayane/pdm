@@ -7,7 +7,7 @@ import { AuthContext } from '../contexts/AuthContext';
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
-  const { login } = useContext(AuthContext);
+  const { error, login } = useContext(AuthContext);
 
   const handleLogin = () => {
     login(email, senha);
@@ -21,7 +21,7 @@ const Login = ({ navigation }) => {
     <View style={{ flex: 1, padding: 16 }}>
       <ScrollView style={{ flex: 1, justifyContent: 'center' }}>
         <Text style={{ fontSize: 24, textAlign: 'center' }}>Login</Text>
-        <HelperText type="error" visible={true}></HelperText>
+        <HelperText type="error" visible={true}>{error}</HelperText>
         <TextInput
           label="Email"
           value={email}

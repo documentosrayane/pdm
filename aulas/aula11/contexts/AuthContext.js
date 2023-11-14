@@ -13,7 +13,7 @@ const AuthProvider = ({ children }) => {
       setUsuario({ email, logado: true });
       setError(null);
     } catch (error) {
-      throw Error(error.message);
+      setError(error.message)
     }
   };
 
